@@ -6,11 +6,11 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/SUSE/sap_host_exporter/collector/registry"
-	"github.com/SUSE/sap_host_exporter/collector/start_service"
-	"github.com/SUSE/sap_host_exporter/internal"
-	"github.com/SUSE/sap_host_exporter/internal/config"
-	"github.com/SUSE/sap_host_exporter/lib/sapcontrol"
+	"github.com/vgrusdev/sap_host_exporter/collector/registry"
+	"github.com/vgrusdev/sap_host_exporter/collector/start_service"
+	"github.com/vgrusdev/sap_host_exporter/internal"
+	"github.com/vgrusdev/sap_host_exporter/internal/config"
+	"github.com/vgrusdev/sap_host_exporter/lib/sapcontrol"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
@@ -22,7 +22,7 @@ var (
 	// the released version
 	version string = "development"
 	// the time the binary was built
-	buildDate string = "at unknown time"
+	buildDate string = "March 2025"
 	// global --help flag
 	helpFlag *bool
 	// global --version flag

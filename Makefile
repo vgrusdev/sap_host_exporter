@@ -12,7 +12,7 @@ AUTHOR ?= shap-staff@suse.de
 
 # you can customize any of the following to build forks
 OBS_PROJECT ?= server:monitoring
-REPOSITORY ?= SUSE/sap_host_exporter
+REPOSITORY ?= vgrusdev/sap_host_exporter
 
 # the Go archs we crosscompile to
 ARCHS ?= amd64 arm64 ppc64le s390x

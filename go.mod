@@ -1,4 +1,4 @@
-module github.com/SUSE/sap_host_exporter
+module github.com/vgrusdev/sap_host_exporter
 
 go 1.23
 

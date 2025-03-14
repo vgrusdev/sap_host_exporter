@@ -8,8 +8,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/SUSE/sap_host_exporter/lib/sapcontrol"
-	"github.com/SUSE/sap_host_exporter/test/mock_sapcontrol"
+	"github.com/vgrusdev/sap_host_exporter/lib/sapcontrol"
+	"github.com/vgrusdev/sap_host_exporter/test/mock_sapcontrol"
 )
 
 func TestNewCollector(t *testing.T) {

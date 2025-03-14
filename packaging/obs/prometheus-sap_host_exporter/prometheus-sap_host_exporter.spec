@@ -20,7 +20,7 @@ Release:        0
 License:        Apache-2.0
 Summary:        Prometheus exporter for SAP hosts
 Group:          System/Monitoring
-Url:            https://github.com/SUSE/sap_host_exporter
+Url:            https://github.com/vgrusdev/sap_host_exporter
 Source:         %{name}-%{version}.tar.gz
 Source1:        vendor.tar.gz
 ExclusiveArch:  aarch64 x86_64 ppc64le s390x
