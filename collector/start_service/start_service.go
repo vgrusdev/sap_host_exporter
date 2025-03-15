@@ -20,8 +20,9 @@ func NewCollector(webService sapcontrol.WebService) (*startServiceCollector, err
 	}
 
 	c.SetDescriptor("processes", "The processes started by the SAP Start Service", []string{"name", "pid", "status", "instance_name", "instance_number", "SID", "instance_hostname"})
-	c.SetDescriptor("instances", "The SAP instances in the context of the whole SAP system", []string{"features", "start_priority", "instance_name", "instance_number", "SID", "instance_hostname"})
-
+	//c.SetDescriptor("instances", "The SAP instances in the context of the whole SAP system", []string{"features", "start_priority", "instance_name", "instance_number", "SID", "instance_hostname"})
+	c.SetDescriptor("instances", "The SAP instances in the context of the whole SAP system", []string{"features", "start_priority", "instance_name", "instance_number", "SID", "instance_hostname", "dispstatus"})
+	
 	return c, nil
 }
 
@@ -103,7 +104,8 @@ func (c *startServiceCollector) recordInstances(ch chan<- prometheus.Metric) err
 			currentSapInstance.Name,
 			strconv.Itoa(int(currentSapInstance.Number)),
 			currentSapInstance.SID,
-			currentSapInstance.Hostname)
+			currentSapInstance.Hostname,
+			instance.Dispstatus)
 	}
 
 	return nil
